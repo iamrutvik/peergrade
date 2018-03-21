@@ -136,7 +136,7 @@ class App extends Component {
         </ul>
           <div className='Chat-List'>
               <form onSubmit={this.handleSubmit}>
-              <input ref={(input) => { this.nameInput = input; }} type='text' placeholder='Enter message' value={this.state.newMessage} autoFocus onChange={this.handleChange} className='textbox'></input>
+              <input ref={(input) => { this.nameInput = input; }} type='text' required placeholder='Enter message' value={this.state.newMessage} autoFocus onChange={this.handleChange} className='textbox'></input>
               <input type="button" value="Send" onClick={this.handleSubmit} className='button'/>
               </form>
           </div>
